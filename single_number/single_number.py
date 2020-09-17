@@ -5,7 +5,16 @@ Returns: an integer
 def single_number(arr):
     # Your code here
 
-    pass
+    #simple naive solution
+    for num in arr:
+        if arr.count(num) == 1:
+            return num
+
+    #using XOR
+    #result = 0  
+    #for i in arr:  
+    #    result ^= i  #what does the XOR do and how it works exactly
+    #return result
 
 
 if __name__ == '__main__':
