@@ -4,8 +4,24 @@ Returns: a List of integers
 '''
 def product_of_all_other_numbers(arr):
     # Your code here
+#traverse the list and multiply all the items to the right of the pointer
+#without taking into account the pointer value
+    output = [1] * len(arr)
+    print(output)
+    prod = 1
+    print(prod)
+    for i in range(len(arr)):
+        #print(f"Product: {prod}, Output: {output}")
+        output[i] *= prod
+        prod *= arr[i]
+    
+    prod = 1
+    for i in range(len(arr) -1, -1, -1):
+        output[i] *= prod
+        prod *= arr[i]
+    
+    return output
 
-    pass
 
 
 if __name__ == '__main__':
