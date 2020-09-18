@@ -1,7 +1,12 @@
 '''
 Input: a List of integers where every int except one shows up twice
 Returns: an integer
+
 '''
+##Time complexity: O(n^)
+
+##space complexity: 0(1)
+
 def single_number(arr):
     # Your code here
 

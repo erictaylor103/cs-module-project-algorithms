@@ -5,8 +5,11 @@ Returns: an integer
 #O(3^n)
 def eating_cookies(n):
     # Your code here
+    #if n is below 0, it means that 
     if n < 0:
         return 0
+    #if n is 0, then it means that it is 1 posibility to eat the cookies
+    #so we will return 1
     if n == 0:
         return 1
     else:

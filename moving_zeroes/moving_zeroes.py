@@ -15,20 +15,20 @@ def moving_zeroes(arr):
     non_zeros = []
     zeros = []
     #check if arr is Not Empty
-    while arr is not None:
+    
         #use "i" as a pointer to traverse trough "arr" (full length of the arr)
-        for i in range(len(arr)):
-            #if "i" is equal to 0, then append it to the zeros list
-            if arr[i] == 0:
-                zeros.append(arr[i])
-            else:
-            #otherwise append "i" to the "non-zeros" list
-                non_zeros.append(arr[i])
-        #combine arr with the non-zeros list and the zeros list
-        arr = non_zeros + zeros
-        
-        #return the new comnined arr
-        return arr
+    for i in range(len(arr)):
+        #if "i" is equal to 0, then append it to the zeros list
+        if arr[i] == 0:
+            zeros.append(arr[i])
+        else:
+        #otherwise append "i" to the "non-zeros" list
+            non_zeros.append(arr[i])
+    #combine arr with the non-zeros list and the zeros list
+    arr = non_zeros + zeros
+    
+    #return the new comnined arr
+    return arr
         
 
 print(moving_zeroes([8, 1, 0, 3, 0, 12]))
